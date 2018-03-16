@@ -7,11 +7,11 @@ if(document.cookie.split(";")[0].split("=")[0] != "")//the login page checks for
 
 if(condition)//condition when username and password are valid
             {
-                var uname=document.getElementById("zname").value;
-                var pswd=document.getElementById("zpswd").value;
+                var username=document.getElementById("zname").value;
+                var passwd=document.getElementById("zpswd").value;
                 if(document.getElementById("chkbx").checked) //Remember me checkbox (stores username and password until "logout" is clicked in homepage)
                 {
-                    document.cookie=uname+"="+pswd;
+                    document.cookie=username+"="+passwd;
                     alert("You will be automtically logged in when you visit this page again" +uname);
                 }
 
